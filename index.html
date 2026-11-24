@@ -1,32 +1,53 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Color Port</title>
-<meta name="description" content="Color Port: renkli konteynerleri doğru gemiye yükle. A colourful container-sorting puzzle game.">
-<link rel="icon" href="icon.png">
+<title>Glint Games</title>
+<meta name="description" content="Glint Games makes bright, friendly puzzle games for phones. Our first game: Color Port.">
+<link rel="icon" href="color-port/icon.png">
 <style>
-  :root { --bg: #f4f8fd; --ink: #14233a; --muted: #5a6b84; --accent: #1f57d8; }
+  :root { --bg: #f4f8fd; --card: #ffffff; --ink: #14233a; --muted: #5a6b84; --line: #dbe5f1; --accent: #1f57d8; --spark: #f5a400; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0e1726; --ink: #eaf1fb; --muted: #9db0cb; --accent: #7fb0ff; }
+    :root { --bg: #0e1726; --card: #162235; --ink: #eaf1fb; --muted: #9db0cb; --line: #25364f; --accent: #7fb0ff; --spark: #ffc447; }
   }
-  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  main { text-align: center; padding: 32px 16px; max-width: 520px; }
-  img { width: 128px; height: 128px; border-radius: 28px; }
-  h1 { font-size: 34px; margin: 18px 0 6px; }
-  p { margin: 0 0 10px; color: var(--muted); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 64px; }
+  .mark { display: flex; align-items: center; gap: 12px; }
+  .mark svg { width: 40px; height: 40px; flex: none; }
+  h1 { font-size: 40px; line-height: 1.1; margin: 0; letter-spacing: -0.5px; }
+  .lead { color: var(--muted); font-size: 19px; margin: 14px 0 36px; max-width: 34em; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); margin: 0 0 12px; }
+  .game { display: flex; align-items: center; gap: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px; text-decoration: none; color: inherit; }
+  .game img { width: 84px; height: 84px; border-radius: 20px; flex: none; }
+  .game strong { display: block; font-size: 21px; }
+  .game span { color: var(--muted); }
+  footer { margin-top: 44px; color: var(--muted); font-size: 15px; }
   a { color: var(--accent); }
-  .links { margin-top: 22px; }
 </style>
 </head>
 <body>
 <main>
-  <img src="icon.png" alt="Color Port">
-  <h1>Color Port</h1>
-  <p lang="tr">Renkli konteynerleri doğru gemiye yükle, limanı boşalt.</p>
-  <p lang="en">Load the colourful containers onto the right ship and clear the harbour.</p>
-  <p class="links"><a href="privacy.html">Gizlilik Politikası · Privacy Policy</a></p>
+  <div class="mark">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path fill="var(--spark)" d="M20 2c1.6 9.2 6.8 14.4 16 16-9.2 1.600-14.4 6.800-16 16-1.600-9.200-6.800-14.400-16-16 9.200-1.600 14.400-6.800 16-16z"/></svg>
+    <h1>Glint Games</h1>
+  </div>
+  <p class="lead">We make bright, friendly puzzle games for phones.</p>
+
+  <h2>Our games</h2>
+  <a class="game" href="color-port/">
+    <img src="color-port/icon.png" alt="">
+    <div>
+      <strong>Color Port</strong>
+      <span>Load the colorful containers onto the right ship and clear the harbor.</span>
+    </div>
+  </a>
+
+  <footer>
+    <p>Contact: <a href="mailto:support@glint.gs">support@glint.gs</a></p>
+    <p><a href="color-port/privacy/">Color Port privacy policy</a></p>
+  </footer>
 </main>
 </body>
 </html>
