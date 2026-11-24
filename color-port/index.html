@@ -3,33 +3,126 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Color Port — Glint Games</title>
-<meta name="description" content="Color Port: load the colorful containers onto the right ship and clear the harbor. A puzzle game by Glint Games.">
-<link rel="icon" href="icon.png">
-<style>
-  :root { --bg: #f4f8fd; --ink: #14233a; --muted: #5a6b84; --accent: #1f57d8; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0e1726; --ink: #eaf1fb; --muted: #9db0cb; --accent: #7fb0ff; }
-  }
-  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  main { text-align: center; padding: 32px 16px; max-width: 520px; }
-  img { width: 128px; height: 128px; border-radius: 28px; }
-  h1 { font-size: 34px; margin: 18px 0 6px; }
-  p { margin: 0 0 10px; color: var(--muted); }
-  a { color: var(--accent); }
-  .links { margin-top: 22px; }
-  .by { margin-top: 28px; font-size: 15px; }
-</style>
+<title>Color Port — a harbor puzzle by Glint Games</title>
+<meta name="description" content="Color Port: sort the colored containers, fill the ships and clear the harbor. 300 levels across 8 port cities. A puzzle game by Glint Games.">
+<link rel="canonical" href="https://glint.gs/color-port/">
+<link rel="icon" href="/assets/glint-mark.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0f2e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Glint Games">
+<meta property="og:title" content="Color Port — a harbor puzzle by Glint Games">
+<meta property="og:description" content="Sort the colored containers, fill the ships and clear the harbor. 300 levels across 8 port cities.">
+<meta property="og:url" content="https://glint.gs/color-port/">
+<meta property="og:image" content="https://glint.gs/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/GlintDisplay.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
-  <img src="icon.png" alt="Color Port">
-  <h1>Color Port</h1>
-  <p lang="en">Load the colorful containers onto the right ship and clear the harbor.</p>
-  <p lang="tr">Renkli konteynerleri doğru gemiye yükle, limanı boşalt.</p>
-  <p class="links"><a href="privacy/">Privacy Policy · Gizlilik Politikası</a></p>
-  <p class="links">Support: <a href="mailto:support@glint.gs">support@glint.gs</a></p>
-  <p class="by">A game by <a href="../">Glint Games</a></p>
-</main>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/" aria-label="Glint Games, home"><img src="/assets/glint-logo-dark.svg" alt="Glint Games" width="1041" height="674"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#games">Games</a>
+      <a href="#how">How to play</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="g-hero">
+      <div>
+        <div class="g-title">
+          <img src="/color-port/icon.webp" alt="" width="256" height="256">
+          <div>
+            <p class="eyebrow" style="margin-bottom:6px">A Glint Games puzzle</p>
+            <h1>Color Port</h1>
+          </div>
+        </div>
+        <p class="lead">Sort the colored containers, fill the ships and clear the harbor. A calm, bright puzzle you can play one level at a time.</p>
+        <div class="btns">
+          <span class="chip">In testing · coming to iPhone &amp; Android</span>
+        </div>
+        <ul class="ticks">
+          <li><strong>300 levels</strong>, each one solved before it ships.</li>
+          <li><strong>8 harbor cities</strong> with their own quays, colors and moods.</li>
+          <li><strong>Hard and Very Hard levels</strong> that pay double and triple.</li>
+          <li><strong>7 languages:</strong> English, Türkçe, Deutsch, Français, Español, Português, Italiano.</li>
+        </ul>
+      </div>
+      <div class="shots">
+        <div class="phone"><img src="/color-port/shots/venice-start.webp" alt="Level 41 in Venice begins: fill 12 ships" width="640" height="1385"></div>
+        <div class="phone"><img src="/color-port/shots/home.webp" alt="The home harbor with the play button" width="640" height="1385"></div>
+      </div>
+    </div>
+
+    <section id="how">
+      <div class="sect-head">
+        <p class="eyebrow">How to play</p>
+        <h2>Three rules, then it gets clever.</h2>
+      </div>
+      <ol class="steps">
+        <li><strong>Tap a free container</strong>Only a container with nothing on top of it can be lifted.</li>
+        <li><strong>Match the ship</strong>It boards the ship of its own color. Any other color waits in the waiting area.</li>
+        <li><strong>Keep room to wait</strong>Fill every ship before the waiting area is full, and the harbor is cleared.</li>
+      </ol>
+    </section>
+
+    <section>
+      <div class="sect-head">
+        <p class="eyebrow">New twists as you go</p>
+        <h2>The harbor keeps surprising you.</h2>
+        <p>Each idea is introduced on its own gentle level, then mixed into what you already know.</p>
+      </div>
+      <div class="grid3">
+        <div class="card"><span class="num">LEVEL 21</span><h3>Mystery containers</h3><p>Their color shows only when the container on top is gone.</p></div>
+        <div class="card"><span class="num">LEVEL 31</span><h3>Frozen containers</h3><p>The ice melts a little with every move. When the number runs out, it is yours.</p></div>
+        <div class="card"><span class="num">LEVEL 41</span><h3>Keys and locks</h3><p>A chained container opens when the one carrying its key boards a ship.</p></div>
+        <div class="card"><span class="num">LEVEL 51</span><h3>Big ships</h3><p>Longer ships that take five containers instead of three or four.</p></div>
+        <div class="card"><span class="num">BOOSTERS</span><h3>Undo, Magnet, Shuffle</h3><p>Three helpers for the moments when the pile gets the better of you.</p></div>
+        <div class="card"><span class="num">FAIR</span><h3>Always solvable</h3><p>Our solver finishes every level before you ever see it.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sect-head">
+        <p class="eyebrow">The tour</p>
+        <h2>Eight ports, one voyage.</h2>
+      </div>
+      <ul class="cities">
+        <li>Istanbul</li><li>Venice</li><li>New York</li><li>Hong Kong</li><li>Rio de Janeiro</li><li>Bergen</li><li>Santorini</li><li>Tokyo</li>
+      </ul>
+      <div class="shots" style="margin-top:38px">
+        <div class="phone"><img src="/color-port/shots/venice.webp" alt="A level in Venice with a gondola and a green ship" width="640" height="1385" loading="lazy"></div>
+        <div class="phone"><img src="/color-port/shots/santorini.webp" alt="A level in Santorini with frozen, locked and mystery containers" width="640" height="1385" loading="lazy"></div>
+        <div class="phone"><img src="/color-port/shots/home.webp" alt="The home harbor" width="640" height="1385" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="support">
+        <p class="eyebrow">Support</p>
+        <h2>Need a hand with Color Port?</h2>
+        <p>Tell us your phone model and what happened. We read every message.</p>
+        <a class="mail" href="mailto:support@glint.gs?subject=Color%20Port">support@glint.gs</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <a href="/" aria-label="Glint Games, home"><img src="/assets/glint-logo-dark.svg" alt="Glint Games" width="1041" height="674"></a>
+      <nav aria-label="Footer">
+        <a href="/color-port/privacy/">Color Port privacy policy</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="mailto:support@glint.gs">support@glint.gs</a>
+      </nav>
+      <span>© 2026 Glint Games</span>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
