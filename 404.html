@@ -4,25 +4,55 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found — Glint Games</title>
-<meta name="robots" content="noindex">
+<meta name="description" content="This page does not exist.">
+<link rel="canonical" href="https://glint.gs/404.html">
 <link rel="icon" href="/assets/glint-mark.svg" type="image/svg+xml">
-<meta name="theme-color" content="#0b0f2e">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<script>document.documentElement.className = 'js';</script>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="brand" href="/" aria-label="Glint Games, home"><img src="/assets/glint-logo-dark.svg" alt="Glint Games" width="1041" height="674"></a>
-  </header>
-  <main class="doc" style="padding-top:60px">
-    <p class="eyebrow">404</p>
-    <h1>This page sailed away.</h1>
-    <p class="lead">The address may be old or mistyped. The harbor is still where it was.</p>
-    <div class="btns">
-      <a class="btn primary" href="/">Back to Glint Games</a>
-      <a class="btn ghost" href="/color-port/">Color Port</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="Glint Games, home"><img src="/assets/glint-logo-light.svg" alt="Glint Games" width="1041" height="674"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#about">About</a>
+      <a href="/#games">Games</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc" style="text-align:center">
+  <p class="eyebrow">Error 404</p>
+  <h1>Nothing is moored here.</h1>
+  <p class="lead" style="margin-left:auto;margin-right:auto">The address may be old or mistyped. The harbor is still where it was.</p>
+  <div class="btns" style="justify-content:center">
+    <a class="btn primary" href="/">Back to Glint Games</a>
+    <a class="btn ghost" href="/color-port/">Color Port</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="/" aria-label="Glint Games, home"><img src="/assets/glint-logo-dark.svg" alt="Glint Games" width="1041" height="674" loading="lazy"></a>
+      <nav aria-label="Footer">
+        <a href="/#about">About</a>
+        <a href="/color-port/">Color Port</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="mailto:support@glint.gs">support@glint.gs</a>
+      </nav>
     </div>
-  </main>
-</div>
+    <div class="legal">
+      <span>© 2026 Glint Games. All rights reserved.</span>
+      <a href="/color-port/privacy/" style="color:inherit">Color Port privacy policy</a>
+    </div>
+  </div>
+</footer>
+<script>(() => { const els = document.querySelectorAll('.rise'); if (!('IntersectionObserver' in window)) { els.forEach((e) => e.classList.add('in')); return; } const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' }); els.forEach((e) => io.observe(e)); })();</script>
 </body>
 </html>
